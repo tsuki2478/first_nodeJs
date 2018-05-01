@@ -1,0 +1,31 @@
+{
+    "name": "anydoor_tsuki",
+    "version": "0.1.1",
+    "description": "title",
+    "main":"src/app.js",
+    "bin":{
+        "anydoor":"bin/anydoor"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "fix": "eslint -fix ."
+    },
+    "pre-commit": [
+        "fix",
+        "lint"
+    ],
+    "keywords": [
+        "static",
+        "webserver"
+    ],
+    "devDependencies": {
+        "pre-commit": "^1.2.2"
+    },
+    "dependencies": {
+        "babel-eslint": "^8.2.3",
+        "chalk": "^2.4.1",
+        "curl": "^0.1.4",
+        "handlebars": "^4.0.11",
+        "yargs": "^11.0.0"
+    }
+}
